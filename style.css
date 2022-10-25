@@ -1,5 +1,50 @@
-.grid-container {
-display: grid;
-grid-template-columns: auto;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
 
 }
+
+.container {
+display: grid;
+grid-template-rows: auto 1fr auto;
+gap: 1rem;
+background-color: beige;
+min-height: 100vh;
+padding: 1rem;
+
+
+
+
+}
+.second-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+background-color: lightcyan;
+min-height: 100vh;
+padding: 1rem;
+
+
+
+
+}
+
+
+.container > *{
+border: 2px solid red;
+
+}
+header,
+footer,
+main,
+aside,
+nav {
+
+}
+
+
+
+
+
